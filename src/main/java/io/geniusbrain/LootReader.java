@@ -89,7 +89,7 @@ public class LootReader {
 
     private void configureDisplayResoulation() {
         Rectangle screenRectangle = new Rectangle(Toolkit.getDefaultToolkit().getScreenSize());
-        int xCoordinate = (int) (screenRectangle.getWidth() * 0.70); // X kordinatı
+        int xCoordinate = (int) (screenRectangle.getWidth() * 0.80); // X kordinatı
         int yCoordinate = (int) (screenRectangle.getHeight() * 0.50); // Y kordinatı
         int croppedImageWidth = (int) (screenRectangle.getWidth() - xCoordinate);
         int croppedImageHeight = (int) (screenRectangle.getHeight() - yCoordinate);
