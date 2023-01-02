@@ -121,12 +121,6 @@ public class LootReader {
         if (Stream.of("War Scythe", "War ", " Scythe").anyMatch(text::contains)) {
             logger.warning("War Scythe KITLANDI!");
             saveImage(ss, "War Scythe", now);
-        } else if (text.contains("Epic Upgrade Scroll") || text.contains("Epic Upgrade")) {
-            logger.warning("Epic Upgrade Scroll KITLANDI!");
-            saveImage(ss, "Epic Upgrade Scroll", now);
-        } else if (text.contains("Eternal Axe")) {
-            logger.warning("Eternal Axe KITLANDI!");
-            saveImage(ss, "Eternal Axe", now);
         } else if (Stream.of("Hatred's Blade", "Hatreds Blade", "Hatred s Blade", "Hatred sBlade").anyMatch(text::contains)) {
             logger.warning("Hatred's Blade KITLANDI!");
             saveImage(ss, "Hatred's Blade", now);
