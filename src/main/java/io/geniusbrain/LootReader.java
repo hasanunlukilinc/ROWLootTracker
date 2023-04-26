@@ -130,6 +130,15 @@ public class LootReader {
         } else if (Stream.of("Golden Snake", "Snake").anyMatch(text::contains)) {
             logger.warning("Golden Snake KITLANDI!");
             saveImage(ss, "Golden Snake", now);
+        } else if (Stream.of("Earthshaker", "shaker").anyMatch(text::contains)) {
+            logger.warning("Earthshaker KITLANDI!");
+            saveImage(ss, "Earthshaker", now);
+        } else if (Stream.of("Vixen", "Vixe").anyMatch(text::contains)) {
+            logger.warning("Vixen KITLANDI!");
+            saveImage(ss, "Vixen", now);
+        } else if (Stream.of("Arch sword", "Arch Sword", "Arc h Sword").anyMatch(text::contains)) {
+            logger.warning("Arch Sword KITLANDI!");
+            saveImage(ss, "Arch Sword", now);
         } else if (text.contains("gained") | text.contains("kazanıldı")) {
             logger.warning("Mob Drop!");
         }
